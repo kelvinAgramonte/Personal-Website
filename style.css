@@ -9,9 +9,10 @@
 }
 
 :root {
-    --text-color: #f5f5f5;
+    --text-color: #000000;
     --hover-color: #12f7ff;
-    --bg-color: #250821;
+    --bg-color: #fff4f4;
+    --side-bar-color: #474444;
     --secon-bg-color: #292e33;
     --big-font: 2.5rem;
     --normal-font: 2rem;
@@ -30,4 +31,124 @@
 body {
     font-family: "Koh Santepheap", serif;
     background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+span {
+    color: var(--hover-color);
+}
+
+.navlist {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: var(--side-bar-color);
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 70px;
+    background: linear-gradient(#ffffff, #77c9ff5b);
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: 40px;
+    /* border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black; */
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+    color:black;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+section {
+    background: url(/img/bg1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
 }
