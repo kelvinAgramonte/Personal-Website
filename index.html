@@ -5,33 +5,87 @@
     <meta http-equiv="X-UA"-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <title>Kelvin Agramonte</title>
 </head>
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
-        <header>Kelvin Agramonte</header>
-        <ul>
-            <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="#about"><i class="fa-solid fa-address-card"></i>About Me</a></li>
-            <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i>Education</a></li>
-            <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
-            <li><a href="#experience"><i class="fa-solid fa-briefcase"></i>Experience</a></li>
-            <li><a href="#currently-learning"><i class="fa-solid fa-chalkboard-user"></i>Learning</a></li>
-        </ul>
-    </div>
-    <section>
-        
-    </section>
 
+    <!-- header section starts -->
+        <header>
+            <div class="user">
+                <img src="/img/me.png" alt="profile-pic">
+                <h3 class="name">Kelvin Agramonte</h3>
+                <p class="post">Software Engineer (Junior)</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#education">education</a></li>
+                    <li><a href="#portfolio">Projects & Interests</a></li>
+                    <li><a href="#learning">Currently Learning</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- header section ends -->
+
+
+    <!-- Home section starts -->
+        <div id="menu" class="fas fa-bars"></div>
+
+        <section class="home" id="home">
+            <h3>HEY!</h3>
+            <h1>I'm <span>Kelvin Agramonte</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Maxime hic dignissimos, deleniti quaerat ad ea vero saepe 
+                perspiciatis asperiores doloribus!
+            </p>
+            <a href="#about"><button class="btn_hero">about me <i class="fas fa-user"></i></button></a>
+        </section>
+    <!-- Home section ends -->
+
+
+    <!-- About section starts -->
+        <section class="about" id="about">
+            <h1 class="heading"><span>about </span>me</h1>
+
+            <div class="row">
+                <div class="info">
+                    <h3><span>name: </span> Kelvin Agramonte</h3>
+                    <h3><span>age: </span> 33</h3>
+                    <h3><span>title: </span> data analytics & python developer</h3>
+                    <h3><span>language: </span> english & spanish</h3>
+                    <a href="#"><button class="btn_cv"> download CV <i class="fas fa-download"></i></button></a>
+                </div>
+
+                <div class="counter">
+                    <div class="box">
+                        <span>1+</span>
+                        <h3>years of experience</h3>
+                    </div>
+    
+                    <div class="box">
+                        <span>15+</span>
+                        <h3>project completed</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- About section ends -->
+
+    <!-- Education section starts -->
+
+    <!-- Education section ends -->
+
+    
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Custom js file link -->
     <script src="script.js"></script>
+
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/1ce9b4e8b5.js" crossorigin="anonymous"></script>
 </body>
 </html>
