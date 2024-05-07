@@ -430,7 +430,133 @@ section {
 
 /* ============================ PORTFOLIO & INTERESTS SECTION: Ends ============================ */
 
+/* ============================ CONTACT ME SECTION: Starts ============================================ */
 
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #000000;
+    color: #ffffff;
+    text-transform: none;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color:#000;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #5c5c5c;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--darkBlue);
+}
+
+.btn_submit {
+    width: 200px;
+    height: 40px;
+    position: flex;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.05);
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 5px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+  border:1px solid #ccc;
+}
+
+.btn_submit:after {
+    content: "";
+    position: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 50%,
+        rgba(255,255,255,0.03) 58%,
+        rgba(255,255,255,0.16) 67%,
+        transparent 68%
+    );
+    background-size: 200% 100%;
+    background-position: 165% 0;
+    transition: 0.7s;
+}
+
+.btn_submit:hover::after {
+    background-position: -20% 0;
+}
+
+.btn_submit:hover{
+    box-shadow: 15px 30px 32px rgba(0,0,0,0.25);
+    transform: translateX(10px);
+}
+
+.btn_submit i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn_submit:hover {
+    background: var(--black);
+    color: #fff;
+}
+
+
+.top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 100;
+}
+/* ============================ CONTACT ME SECTION: Ends ============================================== */
 
 /* Media Queries */
 
@@ -496,6 +622,10 @@ section {
 
     .portfolio .box-container .box {
         width: 100%;
+    }
+
+    .contact .row form {
+        margin: 3rem 0;
     }
 }
 
