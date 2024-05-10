@@ -38,7 +38,7 @@
 }
 
 *::selection {
-    background: var(--black);
+    background: var(--secondary-color);
     color: var(--primary-color);
 }
 
@@ -589,8 +589,14 @@ section {
     padding-top: 1.5rem;
 }
 
+.education .box-container .box h4 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    padding-top: 1.5rem;
+}
+
 .education .box-container .box p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--secondary-color);
     padding: 1rem 0;
 }
